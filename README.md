@@ -3,15 +3,15 @@
 Steps
 
 **Clean** 
-1. `sbt clean`
+- `sbt clean`
 
 **Compile source code.** 
-2. `sbt compile`
+- `sbt compile`
 
 **Generate Jar.** 
-3. `sbt assembly`
+- `sbt assembly`
 
 **Submit Spark job in Dataproc following properties needs to be set.** 
 
-1. `spark.executor.userClassPathFirst` = `true`
-2. `spark.driver.userClassPathFirst` = `true`
+- `spark.executor.userClassPathFirst` = `true`
+- `spark.driver.userClassPathFirst` = `true`
