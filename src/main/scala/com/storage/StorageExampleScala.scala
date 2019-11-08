@@ -16,7 +16,7 @@ class StorageExampleScala(storage: Storage, bucketName: String) {
     println("started creating blob")
     for (i <- 0 to 10) {
       val message: String = "this is simple blob for testing purpose :" + i
-      val blobId = BlobId.of(this.bucketName, "prafu_test_blob" + i);
+      val blobId = BlobId.of(this.bucketName, "storage_test_blob" + i);
       val blobInfo = BlobInfo.newBuilder(blobId).setContentType("text/plain").build()
       this.storage.create(blobInfo, message.getBytes(Charset.forName("UTF8")))
     }
